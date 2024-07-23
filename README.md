@@ -2,14 +2,22 @@
 
 Este guia prático te ensina a implementar um sistema simples e eficaz para rastrear a origem dos visitantes do seu site usando parâmetros UTM e o armazenamento temporário do navegador (Session Storage). Com ele, você saberá de onde seus usuários estão vindo, mesmo que naveguem por várias páginas ou fechem e reabram o navegador.
 
+#
+Este código é ideal para você se:
+
+- **Quer rastrear a origem do tráfego do seu site:** Identifique quais campanhas, canais ou fontes estão trazendo mais visitantes para suas páginas.
+  
+- **Precisa entender a jornada do usuário:** Acompanhe como os usuários navegam pelo seu site após chegarem pela primeira vez, mesmo que fechem e reabram o navegador.
+
+
 
 ## O que são Parâmetros UTM?
 
 Parâmetros UTM são pequenos trechos de texto adicionados ao final da URL do seu site. Eles servem para identificar a origem do tráfego, como campanhas de marketing, links em redes sociais ou e-mails. Exemplos de parâmetros UTM:
 
-`utm_source`: Origem do tráfego (ex: google, facebook, newsletter)
-`utm_medium`: Meio de divulgação (ex: cpc, social, email)
-`utm_campaign`: Nome da campanha (ex: promocao_verao)
+* `utm_source`: Origem do tráfego (ex: google, facebook, newsletter)
+* `utm_medium`: Meio de divulgação (ex: cpc, social, email)
+* `utm_campaign`: Nome da campanha (ex: promocao_verao)
 
 ## Como Funciona
 ### Landing Page ou página com a UTM a ser rastreada:
@@ -38,5 +46,5 @@ Adicione os scripts `utm-capture.js` e `utm-persistence.js` (ou o código equiva
 </head>
 ```
 
-
+**P.S.:** Este código pode complementar a estratégia de tracking de UTM para formulários com campos ocultos. Porém, esses scripts não resolvem o problema do preenchimento do formulário, uma vez que formulários de serviços como ActiveCampaign ou RD Station já fazem isso por padrão.
 *Use o código com cuidado.*
